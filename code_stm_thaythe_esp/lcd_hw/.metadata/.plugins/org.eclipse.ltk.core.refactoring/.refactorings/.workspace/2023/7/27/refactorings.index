@@ -1,0 +1,4 @@
+1688630584002	Delete resource 'stm32f103c8_drivers/Src/001blinking_led.c'
+1688630658261	Delete resource 'stm32f103c8_drivers/Src/004spi_tx_test.c'
+1688790172895	Delete resource 'drivers/Inc/i2c_lcd.h'
+1688790177885	Delete resource 'drivers/Src/i2c_lcd.c'

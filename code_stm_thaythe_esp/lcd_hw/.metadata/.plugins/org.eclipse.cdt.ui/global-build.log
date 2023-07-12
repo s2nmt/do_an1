@@ -1,0 +1,807 @@
+11:22:08 **** Incremental Build of configuration Debug for project stm32f103c8_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/i2c_lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/i2c_lcd.d" -MT"drivers/Src/i2c_lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/i2c_lcd.o"
+arm-none-eabi-gcc "../Src/001blinking_led2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/001blinking_led2.d" -MT"Src/001blinking_led2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/001blinking_led2.o"
+In file included from ../drivers/Src/i2c_lcd.c:7:
+C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc/i2c_lcd.h:11:10: fatal error: stm32f1xx_hal.h: No such file or directory
+   11 | #include "stm32f1xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [drivers/Src/subdir.mk:34: drivers/Src/i2c_lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:23:04 **** Incremental Build of configuration Debug for project stm32f103c8_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_gpio_driver.d" -MT"drivers/Src/stm32f103c8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_i2c_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_i2c_drivers.d" -MT"drivers/Src/stm32f103c8_i2c_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_i2c_drivers.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_rcc_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_rcc_driver.d" -MT"drivers/Src/stm32f103c8_rcc_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_rcc_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_spi_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_spi_driver.d" -MT"drivers/Src/stm32f103c8_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_spi_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_usart_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_usart_driver.d" -MT"drivers/Src/stm32f103c8_usart_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_usart_driver.o"
+arm-none-eabi-gcc -o "stm32f103c8_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\stm32f103c8_drivers-master\stm32f103c8_drivers-master\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c8_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c8_drivers.elf
+ 
+arm-none-eabi-size   stm32f103c8_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f103c8_drivers.elf  > "stm32f103c8_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c8_drivers.elf  "stm32f103c8_drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4724	    108	   1596	   6428	   191c	stm32f103c8_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c8_drivers.list
+ 
+Finished building: stm32f103c8_drivers.bin
+ 
+16:20:29 **** Clean-only build of configuration Debug for project stm32f103c8_drivers ****
+make -j12 clean 
+rm -rf  default.size.stdout  stm32f103c8_drivers.list  stm32f103c8_drivers.elf  ./drivers/Src/stm32f103c8_gpio_driver.o ./drivers/Src/stm32f103c8_i2c_drivers.o ./drivers/Src/stm32f103c8_rcc_driver.o ./drivers/Src/stm32f103c8_spi_driver.o ./drivers/Src/stm32f103c8_usart_driver.o  ./Startup/startup_stm32f103c8tx.o  ./Src/001blinking_led2.o ./Src/syscalls.o ./Src/sysmem.o  ./Startup/startup_stm32f103c8tx.d  ./drivers/Src/stm32f103c8_gpio_driver.d ./drivers/Src/stm32f103c8_i2c_drivers.d ./drivers/Src/stm32f103c8_rcc_driver.d ./drivers/Src/stm32f103c8_spi_driver.d ./drivers/Src/stm32f103c8_usart_driver.d  ./Src/001blinking_led2.d ./Src/syscalls.d ./Src/sysmem.d  stm32f103c8_drivers.bin  stm32f103c8_drivers.elf
+ 
+16:20:29 **** Incremental Build of configuration Debug for project stm32f103c8_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_gpio_driver.d" -MT"drivers/Src/stm32f103c8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_i2c_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_i2c_drivers.d" -MT"drivers/Src/stm32f103c8_i2c_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_i2c_drivers.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_rcc_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_rcc_driver.d" -MT"drivers/Src/stm32f103c8_rcc_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_rcc_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_spi_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_spi_driver.d" -MT"drivers/Src/stm32f103c8_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_spi_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_usart_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_usart_driver.d" -MT"drivers/Src/stm32f103c8_usart_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_usart_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c8tx.d" -MT"Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/001blinking_led2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/001blinking_led2.d" -MT"Src/001blinking_led2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/001blinking_led2.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "stm32f103c8_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\stm32f103c8_drivers-master\stm32f103c8_drivers-master\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c8_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c8_drivers.elf
+ 
+arm-none-eabi-size   stm32f103c8_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f103c8_drivers.elf  > "stm32f103c8_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c8_drivers.elf  "stm32f103c8_drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4724	    108	   1596	   6428	   191c	stm32f103c8_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c8_drivers.bin
+Finished building: stm32f103c8_drivers.list
+ 
+ 
+16:25:50 **** Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6708	     28	   1660	   8396	   20cc	hwlcd.elf
+Finished building: default.size.stdout
+ 
+16:26:25 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6708	     28	   1660	   8396	   20cc	hwlcd.elf
+Finished building: default.size.stdout
+ 
+16:32:49 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8800	     28	   1660	  10488	   28f8	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+16:33:53 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+   8808	     28	   1660	  10496	   2900	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+16:35:26 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8848	     28	   1660	  10536	   2928	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+16:46:57 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:210:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  210 |   sprintf(buffer,"%d",var[count]);
+      |   ^~~~~~~
+../Core/Src/main.c:210:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11212	    128	   1696	  13036	   32ec	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:06:12 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11212	    128	   1696	  13036	   32ec	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:08:59 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11212	    128	   1696	  13036	   32ec	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:09:45 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:210:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  210 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:210:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11212	    128	   1696	  13036	   32ec	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:10:09 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11212	    128	   1696	  13036	   32ec	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:12:39 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11232	    128	   1696	  13056	   3300	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:20:12 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11308	    128	   1696	  13132	   334c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:20:57 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11308	    128	   1696	  13132	   334c	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:21:36 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11308	    128	   1696	  13132	   334c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:23:12 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11332	    128	   1696	  13156	   3364	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:24:29 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11332	    128	   1696	  13156	   3364	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:25:24 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+../Core/Src/main.c:213:3: error: too many arguments to function 'HAL_DeInit'
+  213 |   HAL_DeInit(1000);
+      |   ^~~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:283:19: note: declared here
+  283 | HAL_StatusTypeDef HAL_DeInit(void);
+      |                   ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:25:50 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11340	    128	   1696	  13164	   336c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:26:23 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11340	    128	   1696	  13164	   336c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:27:09 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11340	    128	   1696	  13164	   336c	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:29:13 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11348	    128	   1696	  13172	   3374	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:30:49 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11348	    128	   1696	  13172	   3374	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:33:41 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:34:32 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:35:49 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:36:06 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:36:34 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:37:11 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:40:20 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:40:54 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:42:41 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:43:47 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:44:38 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:206:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  206 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:206:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:44:48 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11388	    128	   1696	  13212	   339c	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:50:30 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:207:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  207 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:207:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11584	    136	   1696	  13416	   3468	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:52:37 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:209:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  209 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:209:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11596	    136	   1696	  13428	   3474	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:54:09 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:210:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  210 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:210:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11608	    136	   1696	  13440	   3480	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+Finished building: hwlcd.list
+ 
+ 
+17:55:18 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:212:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  212 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:212:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+   text	   data	    bss	    dec	    hex	filename
+  11620	    136	   1696	  13452	   348c	hwlcd.elf
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:56:33 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'quetbanphim':
+../Core/Src/main.c:214:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  214 |   sprintf(buffer,"%d",var[count-1]);
+      |   ^~~~~~~
+../Core/Src/main.c:214:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   23 | #include "string.h"
+  +++ |+#include <stdio.h>
+   24 | uint8_t var[8] = {15,15,15,15,15,15,15,15};
+arm-none-eabi-gcc -o "hwlcd.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\lcd_hw\hwlcd\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hwlcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hwlcd.elf
+ 
+arm-none-eabi-size   hwlcd.elf 
+arm-none-eabi-objdump -h -S  hwlcd.elf  > "hwlcd.list"
+arm-none-eabi-objcopy  -O binary  hwlcd.elf  "hwlcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11632	    136	   1696	  13464	   3498	hwlcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: hwlcd.bin
+ 
+Finished building: hwlcd.list
+ 
+17:57:00 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11632	    136	   1696	  13464	   3498	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:57:34 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11632	    136	   1696	  13464	   3498	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:58:42 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11632	    136	   1696	  13464	   3498	hwlcd.elf
+Finished building: default.size.stdout
+ 
+17:59:15 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11632	    136	   1696	  13464	   3498	hwlcd.elf
+Finished building: default.size.stdout
+ 

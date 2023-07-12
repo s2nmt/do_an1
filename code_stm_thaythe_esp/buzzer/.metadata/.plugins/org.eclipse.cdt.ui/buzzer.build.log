@@ -1,0 +1,20 @@
+13:42:31 **** Incremental Build of configuration Debug for project buzzer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "buzzer.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\buzzer\buzzer\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="buzzer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: buzzer.elf
+ 
+arm-none-eabi-size   buzzer.elf 
+arm-none-eabi-objdump -h -S  buzzer.elf  > "buzzer.list"
+arm-none-eabi-objcopy  -O binary  buzzer.elf  "buzzer.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7868	     20	   1644	   9532	   253c	buzzer.elf
+Finished building: default.size.stdout
+ 
+Finished building: buzzer.bin
+Finished building: buzzer.list
+ 
+ 
+
+13:42:32 Build Finished. 0 errors, 0 warnings. (took 604ms)
+

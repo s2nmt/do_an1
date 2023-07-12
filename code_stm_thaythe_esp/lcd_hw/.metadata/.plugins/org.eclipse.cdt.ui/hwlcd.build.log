@@ -1,0 +1,10 @@
+17:59:15 **** Incremental Build of configuration Debug for project hwlcd ****
+make -j12 all 
+arm-none-eabi-size   hwlcd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11632	    136	   1696	  13464	   3498	hwlcd.elf
+Finished building: default.size.stdout
+ 
+
+17:59:15 Build Finished. 0 errors, 0 warnings. (took 203ms)
+

@@ -1,0 +1,36 @@
+14:59:27 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  125 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:127:8: warning: incompatible implicit declaration of built-in function 'printf'
+  127 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:127:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:80:13: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    uint32_t check = 0;
+      |             ^~~~~
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+   text	   data	    bss	    dec	    hex	filename
+  17784	    120	   1840	  19744	   4d20	pn532.elf
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+ 
+Finished building: pn532.list
+ 
+
+14:59:28 Build Finished. 0 errors, 4 warnings. (took 709ms)
+

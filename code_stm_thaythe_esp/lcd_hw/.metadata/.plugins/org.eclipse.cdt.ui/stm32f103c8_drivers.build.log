@@ -1,0 +1,28 @@
+16:20:29 **** Incremental Build of configuration Debug for project stm32f103c8_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_gpio_driver.d" -MT"drivers/Src/stm32f103c8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_i2c_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_i2c_drivers.d" -MT"drivers/Src/stm32f103c8_i2c_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_i2c_drivers.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_rcc_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_rcc_driver.d" -MT"drivers/Src/stm32f103c8_rcc_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_rcc_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_spi_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_spi_driver.d" -MT"drivers/Src/stm32f103c8_spi_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_spi_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f103c8_usart_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103c8_usart_driver.d" -MT"drivers/Src/stm32f103c8_usart_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103c8_usart_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c8tx.d" -MT"Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/001blinking_led2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/001blinking_led2.d" -MT"Src/001blinking_led2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/001blinking_led2.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -I"C:/Users/Minh Tuan/Documents/stm/stm32f103c8_drivers-master/stm32f103c8_drivers-master/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "stm32f103c8_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\stm32f103c8_drivers-master\stm32f103c8_drivers-master\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c8_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c8_drivers.elf
+ 
+arm-none-eabi-size   stm32f103c8_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f103c8_drivers.elf  > "stm32f103c8_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c8_drivers.elf  "stm32f103c8_drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4724	    108	   1596	   6428	   191c	stm32f103c8_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c8_drivers.bin
+Finished building: stm32f103c8_drivers.list
+ 
+ 
+
+16:20:29 Build Finished. 0 errors, 0 warnings. (took 653ms)
+

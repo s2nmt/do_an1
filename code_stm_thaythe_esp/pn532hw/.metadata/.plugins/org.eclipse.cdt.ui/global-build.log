@@ -1,0 +1,252 @@
+14:26:59 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  123 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:123:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+  125 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:80:12: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    int32_t check = 0;
+      |            ^~~~~
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+   text	   data	    bss	    dec	    hex	filename
+  17800	    120	   1840	  19760	   4d30	pn532.elf
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+ 
+Finished building: pn532.list
+ 
+14:38:55 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/pn532_stm32f1.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/pn532_stm32f1.d" -MT"Core/Src/pn532_stm32f1.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/pn532_stm32f1.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  123 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:123:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+  125 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/pn532_stm32f1.c: In function 'PN532_Log':
+../Core/Src/main.c:80:12: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    int32_t check = 0;
+      |            ^~~~~
+../Core/Src/pn532_stm32f1.c:63:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   63 |     printf("%s\r\n", log);
+      |     ^~~~~~
+../Core/Src/pn532_stm32f1.c:63:5: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/pn532_stm32f1.c:33:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   32 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   33 | 
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+   text	   data	    bss	    dec	    hex	filename
+  17796	    120	   1840	  19756	   4d2c	pn532.elf
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+ 
+Finished building: pn532.list
+ 
+14:39:53 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-size   pn532.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17796	    120	   1840	  19756	   4d2c	pn532.elf
+Finished building: default.size.stdout
+ 
+14:40:49 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-size   pn532.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17796	    120	   1840	  19756	   4d2c	pn532.elf
+Finished building: default.size.stdout
+ 
+14:42:38 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-size   pn532.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17796	    120	   1840	  19756	   4d2c	pn532.elf
+Finished building: default.size.stdout
+ 
+14:43:34 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-size   pn532.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17796	    120	   1840	  19756	   4d2c	pn532.elf
+Finished building: default.size.stdout
+ 
+14:44:37 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-size   pn532.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17796	    120	   1840	  19756	   4d2c	pn532.elf
+Finished building: default.size.stdout
+ 
+14:47:06 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  125 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:127:8: warning: incompatible implicit declaration of built-in function 'printf'
+  127 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:127:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:80:12: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    int32_t check = 0;
+      |            ^~~~~
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+   text	   data	    bss	    dec	    hex	filename
+  15556	    120	   1840	  17516	   446c	pn532.elf
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+ 
+Finished building: pn532.list
+ 
+14:48:13 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-size   pn532.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15556	    120	   1840	  17516	   446c	pn532.elf
+Finished building: default.size.stdout
+ 
+14:57:18 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  125 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:127:8: warning: incompatible implicit declaration of built-in function 'printf'
+  127 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:127:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:80:12: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    int32_t check = 0;
+      |            ^~~~~
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+   text	   data	    bss	    dec	    hex	filename
+  17784	    120	   1840	  19744	   4d20	pn532.elf
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+ 
+Finished building: pn532.list
+ 
+14:57:46 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  125 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:127:8: warning: incompatible implicit declaration of built-in function 'printf'
+  127 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:127:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:80:13: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    uint32_t check = 0;
+      |             ^~~~~
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+   text	   data	    bss	    dec	    hex	filename
+  17788	    120	   1840	  19748	   4d24	pn532.elf
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+Finished building: pn532.list
+ 
+ 
+14:59:27 **** Incremental Build of configuration Debug for project pn532 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  125 |        printf(".");
+      |        ^~~~~~
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "pn532_stm32f1.h"
+  +++ |+#include <stdio.h>
+   23 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:127:8: warning: incompatible implicit declaration of built-in function 'printf'
+  127 |        printf("Found card with UID: ");
+      |        ^~~~~~
+../Core/Src/main.c:127:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:80:13: warning: variable 'check' set but not used [-Wunused-but-set-variable]
+   80 |    uint32_t check = 0;
+      |             ^~~~~
+arm-none-eabi-gcc -o "pn532.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Minh Tuan\Documents\stm\pn532hw\pn532\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pn532.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pn532.elf
+ 
+arm-none-eabi-size   pn532.elf 
+arm-none-eabi-objdump -h -S  pn532.elf  > "pn532.list"
+   text	   data	    bss	    dec	    hex	filename
+  17784	    120	   1840	  19744	   4d20	pn532.elf
+arm-none-eabi-objcopy  -O binary  pn532.elf  "pn532.bin"
+Finished building: default.size.stdout
+ 
+Finished building: pn532.bin
+ 
+Finished building: pn532.list
+ 
