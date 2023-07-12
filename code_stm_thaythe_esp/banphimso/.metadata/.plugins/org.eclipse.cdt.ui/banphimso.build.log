@@ -1,0 +1,10 @@
+16:24:30 **** Incremental Build of configuration Debug for project banphimso ****
+make -j12 all 
+arm-none-eabi-size   banphimso.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6060	     36	   1572	   7668	   1df4	banphimso.elf
+Finished building: default.size.stdout
+ 
+
+16:24:30 Build Finished. 0 errors, 0 warnings. (took 208ms)
+

@@ -1,0 +1,8 @@
+main.c:61:6:CheckPassWord	24	static
+main.c:91:6:quetbanphim	8	static
+main.c:175:6:IC_7447	16	static
+main.c:182:6:quetled	8	static
+main.c:225:5:main	8	static
+main.c:270:6:SystemClock_Config	72	static
+main.c:306:13:MX_GPIO_Init	40	static
+main.c:367:6:Error_Handler	4	static,ignoring_inline_asm
